@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobe the Junior Programmer</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+
+    <!-- Font Googles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Content -->
+    <header>
+        <div class="main-header">
+            <img src="assets/header-icon.png" alt="Header Icon" style="width: 40px; margin: 8px 15px; position: absolute;">
+            <a href="index.html"><h3 class="header-info">Cobee The Coder</h3></a>
+            <nav>
+                <a href="#">Project</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">About Us</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>  
+        <!-- Main Jumbotron -->
+        <section id="jumbotron">
+            <div class="jumbotron">
+                <!-- Change the Text when Hovered -->
+                <h1 class="jumbotron-title" onmouseover="changeJumbotron(this)"
+                onmouseout="changeJumbotronBack(this)">Dapatkan Tips Menulis Koding Disini</h1>
+                <div class="header-flex">
+                    <div>
+                        <h2 class="jumbotron-text">Baru Belajar Dunia Programming? <br> Belajar lewat Pengembangan
+                        <span style="color:#f4a261">
+                            Game dan Web
+                        </span> sederhana!</h2>
+                        <div class="mini-text-flex">
+                            <p class="mini-text">Belajar Programming Dasar Disini</p>
+                            <button id="icon-up" onclick="changeText()">
+                                <i class="far fa-hand-point-up"></i>
+                            </button>
+                            <button id="icon-down" class="icon-down">
+                                <i class="far fa-hand-point-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!-- Event Mouse Over -->
+                        <img onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" src="assets/img-header.png" alt="Main Image" class="jumbotron-img"
+                        width="auto" height="300px">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aside Content -->
+        <div class="main-content">
+            <aside>
+                <div class="profile">
+                    <h3 class="aside-title">It's Cobee</h3>
+                    <img src="assets/cobee.jpg" alt="Profile Picture" class="profile-picture" width="150px" height="auto">
+                    <!-- Thumbs Up and Down -->
+                    <div class="toggle">
+                        <button class="btn" id="green">
+                            <i class="fa fa-thumbs-up fa-lg"></i>
+                        </button>
+                        <button class="btn" id="red">
+                            <i class="fa fa-thumbs-down fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Make Input Search -->
+                <div class="search-tag-container">
+                    <div class="input-tag">
+                        <h3 class="aside-title">Search Here</h3>
+                        <input type="text" id="myInput" placeholder="Search Here...">
+                        <span class="addBtn" onclick="newElement()">Search</span>
+                    </div>
+
+                    <ul id="myUL" class="search-tags-list">
+                        <li class="search-tags-item">HTML</li>
+                        <li class="search-tags-item">Code</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Part of Main Content Iframe -->
+            <div class="content">
+
+                <!-- Project Articles -->
+                <article id="my-project">
+                    <h3 class="article-title">My Project</h3>
+                    <!-- Project Container 1 -->
+                    <div class="project-container">
+                        <!-- Project 1 -->
+                        <div class="project">
+                            <img src="assets/Screenshot1.png" alt="Calculator Project" width="300px" height="300px">
+                            <h4 class="project-title">Calculator Project</h4>
+                            <p class="project-description">This is a Simple Calculator</p>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project">
+                            <img src="assets/Screenshot2.png" alt="Wizard Hunters" width="370px" height="230px">
+                            <h4 class="project-title">Wizard Hunters</h4>
+                            <p class="project-description">Beat the Skeleton and Finish the All Levels</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Container 2 -->
+                    <div class="project-container">
+                        <!-- Project 3 -->
+                        <div class="project">
+                            <img src="assets/Screenshot3.png" alt="Catch the Bird" width="300px" height="200px">
+                            <h4 class="project-title">Catch the Bird</h4>
+                            <p class="project-description">Click the Bird and Get the Score</p>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project">
+                            <img src="assets/Screenshot4.png" alt="Man Need a Gold" width="370px" height="230px">
+                            <h4 class="project-title">Man Need a Gold</h4>
+                            <p class="project-description">Take all the Gold who spawn in Every Platform</p>
+                        </div>
+                    </div>
+
+                </article>
+
+
+
+                <!-- Video Articles -->
+                <article id="video">
+                    <div class="item-video">
+                        <h3 class="article-title">What's Coding?</h3>
+                        <iframe width="500" height="350" src="https://www.youtube.com/embed/XMZFUnAgOqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <h3 class="article-title">Coding is Not Diffucult!</h3>
+                        <iframe width="500" height="350" src="https://www.youtube.com/embed/hb7Q33ysCwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+
+
+                <!-- Maps Articles -->
+                <article id="maps">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15776.425425106734!2d115.2405905!3d-8.6814353!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc46fbfd31a9c821!2sTimedoor%20Academy%20%7C%20Kursus%20Coding%2C%20Programming%20di%20Denpasar%20Bali%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1659919438372!5m2!1sen!2sid" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <div class="main-footer">
+            <h3 class="info-top">Cobee The Junior Programmer</h3>
+            <div class="social-media">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <p class="info-center">Copyright &copy; 2022. All Rights Resevered - Designed by Mr Dekwid</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

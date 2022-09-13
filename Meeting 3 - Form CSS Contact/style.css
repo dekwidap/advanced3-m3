@@ -1,0 +1,465 @@
+.main-header {
+    background-color: rgb(38, 70, 83);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* Note Height nya 60px */
+    height: 60px;
+    z-index: 100;
+}
+
+/* Body Missing Code */
+body {
+    margin: 0% 0% 0% 0%;
+    padding: 0;
+}
+
+.header-info {
+    text-align: left;
+    color: #88a2d2;
+    /* Note Gambar biar gak mepet sama Gambar */
+    padding-left: 50px;
+    /* Note Gambar biar gak mepet sama Gambar */
+    margin: 14px;
+    position: absolute;
+    left: 0px;
+}
+
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    background-color: transparent;
+}
+
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+    /* Missing Code */
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #88a2d2;
+    padding-left: 15px;
+    /* Missing Code */
+    padding-right: 15px;
+    float: left;
+}
+
+a:hover {
+    color: #f9f9fa;
+}
+
+
+
+/* Jumbotron Main */
+main {
+    margin-top: 60px;
+}
+
+#jumbotron {
+    width: 100%;
+}
+
+.jumbotron {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(38, 70, 83)
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.jumbotron-title {
+    color: rgb(224, 251, 252);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.jumbotron-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 8px solid rgb(244, 162, 97);
+}
+
+.jumbotron-img {
+    height: 300px;
+}
+
+.mini-text-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mini-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    margin-right: 5px;
+}
+
+.fa-hand-point-up {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.icon-down {
+    display: none;
+}
+
+.fa-hand-point-down {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(38, 70, 83);
+    border-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+
+/* Aside CSS */
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 20px;
+}
+
+aside {
+    max-width: 18%;
+    max-height: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px gainsboro;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.aside-title {
+    margin-top: 50px;
+    font-size: 25px;
+    border-top: 5px solid rgba(38, 70, 83);
+    border-radius: 5px;
+}
+
+.profile-picture {
+    border-style: solid;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+/* Part of Main Content Iframe */
+.content {
+    margin-left: 10%;
+    max-width: 65%;
+}
+
+article {
+    max-width: 100%;
+}
+
+.article-title {
+    text-align: left;
+    font-size: 30px;
+    margin: 50px 0 30px;
+}
+
+.maps {
+    padding-top: 10px;
+}
+
+iframe {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 40px gainsboro;
+}
+
+
+/* Footer */
+/* Bukan Class Selector tapi Element Selector */
+footer {
+    background-color: rgb(38, 70, 83)
+}
+
+.center-footer {
+    margin: 0 20px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-top {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    color: rgb(224, 251, 252)
+}
+
+.info-center {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid white;
+    color: rgb(224, 251, 252)
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-instagram-square, .fa-twitter-square, .fa-facebook-square, .fa-envelope {
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+/* Toggle Like and Dislike */
+.toggle {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.btn {
+    background-color: transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+
+
+/* Project Article */
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 10px 30px;
+    border-bottom: 10px solid #e76f51;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.project-title {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+/* Search Input  */
+ul, li {
+    position: relative;
+}
+
+input {
+    width:60%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(38, 70, 83);
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+}
+
+.addBtn {
+    width: 40%;
+    padding: 6px;
+    background-color: rgb(38, 70, 83);
+    margin: 0;
+    cursor: pointer;
+    color: snow;
+    height:40px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.search-tags-list {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.search-tags-item {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(38, 70, 83);
+    color: snow;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px;
+    color: tomato;
+    font-family: 'Fredoka One', cursive;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* Contact CSS */
+.contact-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.illustration-img {
+    margin: 0;
+    width: 800px;
+}
+
+.contact {
+    display: inline-block;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.profile-contact-img {
+    width: 200px;
+}
+
+
+/* Form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icon */
+.icon {
+    margin-right: 6px;
+}
+
+.fa-user, .fa-map-marker-alt, .fa-envelope-open, .fa-comment {
+    font-size: 27px;
+}
+
+/* Label */
+.form-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Input Name, Email, City */
+.form-input {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    outline: none;
+    height: 48px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.input-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    height: 100%;
+}
+
+/* TextArea */
+.textarea-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-textarea {
+    position: relative;
+}
+
+.textarea {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    margin-top: 10px;
+}
+
+/* Submit */
+.submit {
+    border-style: none;
+    border-radius: 25px;
+    color: aliceblue;
+    background-color: rgb(38, 70, 83);
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Make input going top */
+.input-item:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.textarea:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}
+
+.textarea:not(:placeholder-shown).textarea:not(:focus) + .form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}
